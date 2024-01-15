@@ -1,0 +1,32 @@
+GET http://localhost:8080/subscribers
+
+###
+GET http://localhost:8080/subscribers/65a510aa7c52f8f6cec3de41
+
+
+
+###
+POST http://localhost:8080/subscribers
+Content-Type: application/json
+
+{
+    "name":"Rose sub3",
+    "subscribedToChannel":"simplifeied web"
+}
+
+
+###
+
+DELETE http://localhost:8080/subscribers/65a510aa7c52f8f6cec3de41
+
+
+
+###
+
+PATCH http://localhost:8080/subscribers/65a511177c52f8f6cec3de44
+
+Content-Type: application/json
+
+{
+    "name":"New Name"
+}
