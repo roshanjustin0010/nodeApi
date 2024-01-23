@@ -14,5 +14,9 @@ app.use(express.json())
 const subscribersRouter = require('./routes/subscribers')
 app.use('/subscribers',subscribersRouter)
 
+const authRouter = require('./routes/auth')
+app.use('/subscribers/auth',authRouter)
+
+
 
 app.listen(8080, () => console.log('server started rose !!!'))
