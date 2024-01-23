@@ -1,7 +1,31 @@
-GET http://localhost:8080/subscribers
+
 
 ###
-GET http://localhost:8080/subscribers/65a510aa7c52f8f6cec3de41
+POST http://localhost:8080/subscribers/auth/register
+Content-Type: application/json
+
+{
+    "username":"rose",
+    "password":"12345678"
+}
+
+
+###
+POST http://localhost:8080/subscribers/auth/login
+Content-Type: application/json
+
+{
+    "username":"rose",
+    "password":"12345678"
+}
+
+
+
+###
+GET http://localhost:8080/subscribers/getAll
+
+###
+GET http://localhost:8080/subscribers/getUser/65aa226643ac4e8596486f97
 
 
 
@@ -10,20 +34,20 @@ POST http://localhost:8080/subscribers
 Content-Type: application/json
 
 {
-    "name":"Rose sub3",
-    "subscribedToChannel":"simplifeied web"
+    "name":"faseeh sub2",
+    "subscribedToChannel":"tech simple web"
 }
 
 
 ###
 
-DELETE http://localhost:8080/subscribers/65a510aa7c52f8f6cec3de41
+DELETE http://localhost:8080/subscribers/65aa223343ac4e8596486f93
 
 
 
 ###
 
-PATCH http://localhost:8080/subscribers/65a511177c52f8f6cec3de44
+PATCH http://localhost:8080/subscribers/65aa223343ac4e8596486f93
 
 Content-Type: application/json
 
